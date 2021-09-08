@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6cfa72119faf4b2f94493ad80ff7f95c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6cfa72119faf4b2f94493ad80ff7f95c" ></div>
+        
+</body>
+<script>    
+    
+            var map_6cfa72119faf4b2f94493ad80ff7f95c = L.map(
+                "map_6cfa72119faf4b2f94493ad80ff7f95c",
+                {
+                    center: [48.856614, 2.3522219],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+
+            
+
+        
+    
+            var tile_layer_971848419cce4835899de18bb4718618 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var marker_193cb4386b0d4a4f8a82a1a77b887d35 = L.marker(
+                [48.8626302, 2.3498075],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_0bdf19892cc04c3e924c6af96a59103b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_193cb4386b0d4a4f8a82a1a77b887d35.setIcon(icon_0bdf19892cc04c3e924c6af96a59103b);
+        
+    
+            marker_193cb4386b0d4a4f8a82a1a77b887d35.bindTooltip(
+                `<div>
+                     Grande Truanderie - Saint-Denis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26ea973f29e446c4bf9b3a240a337ac6 = L.marker(
+                [48.866143391, 2.32518006471],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_68413071577c4808986a117c7323f40f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_26ea973f29e446c4bf9b3a240a337ac6.setIcon(icon_68413071577c4808986a117c7323f40f);
+        
+    
+            marker_26ea973f29e446c4bf9b3a240a337ac6.bindTooltip(
+                `<div>
+                     Cambon - Rivoli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f4fa405b5f45e58bc2f558c2af40b6 = L.marker(
+                [48.851518815, 2.34367031604],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_60771b13374942d6821ebd774c9d3f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c3f4fa405b5f45e58bc2f558c2af40b6.setIcon(icon_60771b13374942d6821ebd774c9d3f23);
+        
+    
+            marker_c3f4fa405b5f45e58bc2f558c2af40b6.bindTooltip(
+                `<div>
+                     Harpe - Saint-Germain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_605f1024805748a4822276fe9451ff5a = L.marker(
+                [48.8614110147, 2.32012141852],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_9f8efd3d2ee443b486cd760921c37a2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_605f1024805748a4822276fe9451ff5a.setIcon(icon_9f8efd3d2ee443b486cd760921c37a2f);
+        
+    
+            marker_605f1024805748a4822276fe9451ff5a.bindTooltip(
+                `<div>
+                     Assemblée Nationale
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2f7773a5d5c4aef84c616794d6f3362 = L.marker(
+                [48.8649209825, 2.30254918239],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_8b7dc9a538c94ca298de5b42aac556e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a2f7773a5d5c4aef84c616794d6f3362.setIcon(icon_8b7dc9a538c94ca298de5b42aac556e3);
+        
+    
+            marker_a2f7773a5d5c4aef84c616794d6f3362.bindTooltip(
+                `<div>
+                     Place de la Reine Astrid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_465a6c81f36c490d99873e5925bf86c8 = L.marker(
+                [48.8731167, 2.3593052],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_887b2d22eeb7469aadd4a67ba603af9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_465a6c81f36c490d99873e5925bf86c8.setIcon(icon_887b2d22eeb7469aadd4a67ba603af9b);
+        
+    
+            marker_465a6c81f36c490d99873e5925bf86c8.bindTooltip(
+                `<div>
+                     Vinaigriers - Magenta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78f87d0413bd41e380241dd7ae047632 = L.marker(
+                [48.8658042767, 2.36933707497],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_d6c25a61d95d4434a99de12ab5975725 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_78f87d0413bd41e380241dd7ae047632.setIcon(icon_d6c25a61d95d4434a99de12ab5975725);
+        
+    
+            marker_78f87d0413bd41e380241dd7ae047632.bindTooltip(
+                `<div>
+                     Richard Lenoir - Jean-Pierre Timbaud
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b94063c53b9421382d121f6b7ee899e = L.marker(
+                [48.8468241086, 2.36693646759],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_4f957e29cdda4152b2bf5fa606060a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9b94063c53b9421382d121f6b7ee899e.setIcon(icon_4f957e29cdda4152b2bf5fa606060a8c);
+        
+    
+            marker_9b94063c53b9421382d121f6b7ee899e.bindTooltip(
+                `<div>
+                     Bastille - Quai de la Rapée
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b08aaf47908495fa7d2aeaba7253952 = L.marker(
+                [48.840408688, 2.3154367134],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_37c6ce6161174e69b0c27da5e34205ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8b08aaf47908495fa7d2aeaba7253952.setIcon(icon_37c6ce6161174e69b0c27da5e34205ba);
+        
+    
+            marker_8b08aaf47908495fa7d2aeaba7253952.bindTooltip(
+                `<div>
+                     Vaugirard - Pasteur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cad17d564e164d6d97de864268df35be = L.marker(
+                [48.8446106331, 2.3179140687],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_4a3fb0a5ef2a4397aa4ed29fdafa7bf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cad17d564e164d6d97de864268df35be.setIcon(icon_4a3fb0a5ef2a4397aa4ed29fdafa7bf0);
+        
+    
+            marker_cad17d564e164d6d97de864268df35be.bindTooltip(
+                `<div>
+                     Cherche-Midi - Hôpital Necker
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_384aa0e07a9a4568ba3923fd938c8349 = L.marker(
+                [48.8455150898, 2.37264984463],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_94ab1253b25040ddbe4e81aeea01a4b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_384aa0e07a9a4568ba3923fd938c8349.setIcon(icon_94ab1253b25040ddbe4e81aeea01a4b2);
+        
+    
+            marker_384aa0e07a9a4568ba3923fd938c8349.bindTooltip(
+                `<div>
+                     Gare de Lyon - Place Louis Armand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51c8c7cbbf67411b82042d39c22b163a = L.marker(
+                [48.8623829706, 2.33848225325],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_d507fc8816bd412f8986f2bfb3d4bf72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_51c8c7cbbf67411b82042d39c22b163a.setIcon(icon_d507fc8816bd412f8986f2bfb3d4bf72);
+        
+    
+            marker_51c8c7cbbf67411b82042d39c22b163a.bindTooltip(
+                `<div>
+                     Place du Palais Royal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6afb5bdb11f414f8f03625a238f0f1f = L.marker(
+                [48.8704060285, 2.32324350981],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_22abb0384d65418880606787839a4220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e6afb5bdb11f414f8f03625a238f0f1f.setIcon(icon_22abb0384d65418880606787839a4220);
+        
+    
+            marker_e6afb5bdb11f414f8f03625a238f0f1f.bindTooltip(
+                `<div>
+                     Malesherbes - Place de la Madeleine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c25bbacdb83b43b19854643172b2653a = L.marker(
+                [48.8311602, 2.3774395],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_3b06be5858e947fe9be9626535bfefa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c25bbacdb83b43b19854643172b2653a.setIcon(icon_3b06be5858e947fe9be9626535bfefa5);
+        
+    
+            marker_c25bbacdb83b43b19854643172b2653a.bindTooltip(
+                `<div>
+                     Pau Casals - Neuve Tolbiac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7410532db41d455a937ee2eda8330892 = L.marker(
+                [48.8756744009, 2.32655983418],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_d6ae1fbc715049b2bc47d4d6d7268543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7410532db41d455a937ee2eda8330892.setIcon(icon_d6ae1fbc715049b2bc47d4d6d7268543);
+        
+    
+            marker_7410532db41d455a937ee2eda8330892.bindTooltip(
+                `<div>
+                     Gare Saint-Lazare - Cour du Havre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd43a1ddce0d4ca2950ac64d5a4fc6dd = L.marker(
+                [48.8606804737, 2.31484819558],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_80581a63f12245c8b27f3cc173abad09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bd43a1ddce0d4ca2950ac64d5a4fc6dd.setIcon(icon_80581a63f12245c8b27f3cc173abad09);
+        
+    
+            marker_bd43a1ddce0d4ca2950ac64d5a4fc6dd.bindTooltip(
+                `<div>
+                     Constantine - Université
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95027fefdc5c4d849f972a03a6548212 = L.marker(
+                [48.8538327, 2.3697222],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_d2642cbd11344f3da9721f43d47b4484 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_95027fefdc5c4d849f972a03a6548212.setIcon(icon_d2642cbd11344f3da9721f43d47b4484);
+        
+    
+            marker_95027fefdc5c4d849f972a03a6548212.bindTooltip(
+                `<div>
+                     Richard Lenoir - Place de la Bastille
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5427b4d5baf241c8bc27c0335117e4aa = L.marker(
+                [48.8562118, 2.3532536],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_ec903d7fe54444148bf61dc07e823321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5427b4d5baf241c8bc27c0335117e4aa.setIcon(icon_ec903d7fe54444148bf61dc07e823321);
+        
+    
+            marker_5427b4d5baf241c8bc27c0335117e4aa.bindTooltip(
+                `<div>
+                     Lobau - Hôtel de Ville
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23ededdc263048ca80ade2552781d7dd = L.marker(
+                [48.8332506905, 2.27654032409],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_bbab5d1bce6047bc8e9b6b346714f552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_23ededdc263048ca80ade2552781d7dd.setIcon(icon_bbab5d1bce6047bc8e9b6b346714f552);
+        
+    
+            marker_23ededdc263048ca80ade2552781d7dd.bindTooltip(
+                `<div>
+                     Parc Suzanne Lenglen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2159ff4fbd54febae103d000779a567 = L.marker(
+                [48.850533, 2.383756],
+                {"radius": 10}
+            ).addTo(map_6cfa72119faf4b2f94493ad80ff7f95c);
+        
+    
+            var icon_2b05cfd9a86e405085f1c0e1e211d7a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e2159ff4fbd54febae103d000779a567.setIcon(icon_2b05cfd9a86e405085f1c0e1e211d7a8);
+        
+    
+            marker_e2159ff4fbd54febae103d000779a567.bindTooltip(
+                `<div>
+                     Place Mireille Havet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
